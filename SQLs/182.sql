@@ -1,0 +1,1 @@
+select K.Email from (select count(Email) as e, Email from Person group by Email) K where K.e>1
